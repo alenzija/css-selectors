@@ -1,0 +1,57 @@
+.editor {
+  display: flex;
+  width: 97%;
+  max-width: 750px;
+  margin: 0 auto;
+  justify-content: space-between;
+  background-color: #7e7474;
+  border: 5px solid #322e2e;
+  min-height: 350px;
+
+
+  &-element {
+    width: 50%;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    height: 40px;
+    border-bottom: 2px solid #ffffff7c;
+    background-color: #4f4242;
+    &--file {
+      color: #bebebe;;
+    }
+  }
+  &__window {
+    display: flex;
+    &.light {
+      background-color: #ffffff;
+    }
+  }
+  &__numbers {
+    padding: 5px;
+    border-right: 2px solid #ffffff7c;
+    &.light {
+      background-color: grey;
+    }
+  }
+}
+
+.shake {
+  animation: shake .4s ease-in;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px); }
+  10% { transform: translate(-1px, -2px);}
+  20% { transform: translate(-3px, 0px); }
+  30% { transform: translate(3px, 2px); }
+  40% { transform: translate(1px, -1px); }
+  50% { transform: translate(-1px, 2px); }
+  60% { transform: translate(-3px, 1px); }
+  70% { transform: translate(3px, 1px); }
+  80% { transform: translate(-1px, -1px) }
+  90% { transform: translate(1px, 2px); }
+  100% { transform: translate(1px, -2px); }  
+}

@@ -1,0 +1,74 @@
+@import '~normalize.css';
+
+html {
+  font-family: monospace;
+  font-size: .9rem;
+  @media screen and (max-width: 768px) {
+    font-size: 13px;
+  }
+  
+}
+
+body {
+  background-color: #808080;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+pre {
+  margin: 0;
+}
+
+.animated {
+  animation: animated 1s ease-in infinite;
+}
+
+@keyframes animated {
+  20% {
+    transform: rotate3d(0, 0, 1, -15deg);
+  }
+  40% {
+      transform: rotate3d(0, 0, 1, 10deg);
+  }
+  60% {
+      transform: rotate3d(0, 0, 1, -5deg);
+  }
+  70% {
+      transform: rotate3d(0, 0, 1, 0);
+  }
+  80% {
+      transform: rotate3d(0, 0, 1, 5deg);
+  }
+  90% {
+      transform: rotate3d(0, 0, 1, 3deg);
+  }
+  100% {
+      transform: rotate3d(0, 0, 1, 0);
+  }
+}
+
+.hidden {
+  animation: hidden .5s ease-in;
+}
+
+@keyframes hidden {
+  0% {
+    opacity: 1
+  }
+  100% {
+    opacity: 0;
+  }  
+}
+
+@media sreen and (max-width: 1280px) {
+  html {
+    font-size: 14px;
+  }
+}

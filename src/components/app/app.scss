@@ -1,0 +1,22 @@
+.container {
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.wrapper-right {
+  width: 70%;
+  overflow-y: auto;
+}
+
+
+.level-menu {
+  background-color: #6a6363;
+  position: fixed;
+  width: 30%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 10px;
+  overflow-y: auto;
+}

@@ -1,0 +1,50 @@
+cherry,
+floral,
+sunflower,
+tulips {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: relative;
+
+  img {
+    width: 30px;
+
+    @media screen and (max-width: 768px) {
+      width: 20px;
+    }
+  }
+
+  &.hover img {
+      background: #ff000000;
+      border-radius: 20px;
+      box-shadow: 0 0 10px #554d4d;
+  }
+  
+
+  &.big {
+    width: 45px;
+    height: 45px;
+    img {
+      width: 45px;
+
+      @media screen and (max-width: 768px) {
+        width: 35px;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 35px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+      width: 20px;
+  }
+}
+
+.html-viewer {
+  .hover {
+    color: #9b1189;
+  }
+}
