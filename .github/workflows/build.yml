@@ -1,8 +1,6 @@
-name: Build
+name: Front-end build
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main", "development" ]
 
@@ -22,9 +20,14 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
 
-    - name: Build
-      run: |
-        npm install
-        npm run lint
-        npm run test
-        npm run build
+    - name: Install dependencies
+      run: npm install
+
+    - name: ESLint check
+      run: npm run lint
+
+    - name: Jest tests
+      run: npm run test
+
+    - name: Create build
+      run: npm run build
