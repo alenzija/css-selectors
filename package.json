@@ -8,7 +8,7 @@
     "build": "webpack --mode=production --node-env=production",
     "watch": "webpack --mode=development --node-env=development --watch",
     "start": "webpack serve --mode=development --node-env=development --open",
-    "lint": "eslint .",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "test": "jest"
   },
   "author": "",
