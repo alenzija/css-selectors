@@ -8,7 +8,7 @@
     "build": "webpack --mode=production --node-env=production",
     "watch": "webpack --mode=development --node-env=development --watch",
     "start": "webpack serve --mode=development --node-env=development --open",
-    "lint": "eslint ./src",
+    "lint": "eslint .",
     "test": "jest"
   },
   "author": "",
